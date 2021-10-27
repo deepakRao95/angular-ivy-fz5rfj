@@ -1,4 +1,69 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+
+<table>
+
+
+  <tr >
+    <th> # </th>
+    
+    <th> FirstName </th>
+
+    <th> LastName  </th>
+
+    <th> Email </th>
+
+    <th> Gender</th>
+  </tr>
+
+    
+  <tr> 
+      
+  <td> {{ myJson[0].id}} </td>
+
+  <td> {{ myJson[0].first_name}} </td>
+
+  <td> {{ myJson[0].last_name}} </td>
+
+  <td>{{ myJson[0].email}} </td>
+
+  <td>{{ myJson[0].gender}} </td>
+
+</tr>
+    
+
+    
+
+    
+
+</table>
+
+
+
+
+
+
+<script>
+
+var jsonVar = JSON.parse(myJson);
+
+window.onload = function() {
+alert("1");
+}
+
+angular.forEach (myJson,function){
+   $scope.list : <tr> 
+      
+      <td> {{ myJson[i].id}} </td>
+
+      <td> {{ myJson[i].first_name}} </td>
+
+      <td> {{ myJson[i].last_name}} </td>
+
+      <td>{{ myJson[i].email}} </td>
+
+      <td>{{ myJson[i].gender}} </td>
+    
+    </tr>
+  }
+</script>
